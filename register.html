@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_user.css">
-    <title>Login - MyPCStore</title>
+    <title>Register - MyPCStore</title>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-widget">
+    <div class="register-container">
+        <div class="register-widget">
             <h2 class="store-title">MyPCStore</h2>
-            <form action="login.php" method="POST">
+            <form action="register.php" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
 
-                <button type="submit">Login</button>
-                <a href="register.html" class="register-button">Register</a>
+                <button type="submit">Register</button>
+                <a href="login.html" class="login-button">Back to Login</a>
             </form>
         </div>
     </div>

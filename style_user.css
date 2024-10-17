@@ -1,0 +1,138 @@
+/* Styles for the login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Black background */
+}
+
+.login-widget {
+    background-color: #333333; /* Dark gray background */
+    border: 1px solid #ddd;
+    padding: 40px;
+    width: 300px; /* Fixed width to give a square appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.login-widget label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff; /* White for better contrast */
+    margin-bottom: 8px;
+}
+
+.login-widget input[type="email"],
+.login-widget input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-widget button {
+    width: auto; /* Changed to auto to center */
+    padding: 12px 20px; /* Added padding for better appearance */
+    background-color: #f0c14b; /* Button color */
+    color: #333333; /* Dark text for contrast */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto; /* Center button horizontally */
+    display: block; /* Needed for margin to work */
+}
+
+.login-widget button:hover {
+    background-color: #ddb347; /* Darker shade for hover effect */
+}
+
+.register-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #f0c14b; /* Changed to match button color */
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    color: #ddb347; /* Darker shade for hover effect */
+}
+
+/* Styles for the register page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Black background */
+}
+
+.register-widget {
+    background-color: #333333; /* Dark gray background */
+    border: 1px solid #ddd;
+    padding: 40px;
+    width: 300px; /* Fixed width to give a square appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.register-widget label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff; /* White for better contrast */
+    margin-bottom: 8px;
+}
+
+.register-widget input[type="text"],
+.register-widget input[type="email"],
+.register-widget input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-widget button {
+    width: auto; /* Changed to auto to center */
+    padding: 12px 20px; /* Added padding for better appearance */
+    background-color: #f0c14b; /* Button color */
+    color: #333333; /* Dark text for contrast */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto; /* Center button horizontally */
+    display: block; /* Needed for margin to work */
+}
+
+.register-widget button:hover {
+    background-color: #ddb347; /* Darker shade for hover effect */
+}
+
+.login-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #f0c14b; /* Changed to match button color */
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    color: #ddb347; /* Darker shade for hover effect */
+}
+
+.store-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* White for better contrast */
+    margin-bottom: 20px;
+}
