@@ -191,10 +191,16 @@ footer {
     border: none;
     color: #111;
     padding: 10px 20px;
+    border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s;
+  }
+
+.your-cart-btn:hover {
+    background-color: #efca6c; /* Amazon's Add to Cart button color */
   }
   
 .your-cart-btn img {
@@ -234,11 +240,12 @@ footer {
 .product-info .btn {
     background-color: #555555;
     color: #fff;
-    padding: 10px;
+    padding: 8px 15px;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .product-card .btn:hover {
@@ -253,10 +260,11 @@ footer {
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 #add-to-cart-btn:hover {
-    background-color: #777;
+    background-color: #404040;
 }
 
 /* Sort Dropdown Styles */
@@ -275,6 +283,6 @@ footer {
   .sort-dropdown {
     padding: 5px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
   }
