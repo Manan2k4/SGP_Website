@@ -129,6 +129,19 @@
     color: #ddb347; /* Darker shade for hover effect */
 }
 
+.index-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #f0c14b; /* Changed to match button color */
+    margin-top: 10px;
+}
+
+.index-button:hover {
+    color: #ddb347; /* Darker shade for hover effect */
+}
+
 .store-title {
     text-align: center;
     font-size: 24px;

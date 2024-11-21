@@ -18,8 +18,8 @@
             </div>
         <?php else: ?>
             <!-- Display existing login and signup buttons if the user is not logged in -->
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="register.html" class="signup-btn">Signup</a>
+            <a href="../Pages/login.html" class="login-btn">Login</a>
+            <a href="../Pages/register.html" class="signup-btn">Signup</a>
         <?php endif; ?>
     </div>
 </body>

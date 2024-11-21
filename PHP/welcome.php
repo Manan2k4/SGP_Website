@@ -19,10 +19,10 @@ if (!isset($_SESSION['username'])) {
     <header>
         <nav>
             <div class="logo">
-                <a href="../index.html">MyPCStore</a>
+                <a href="../Pages/index.html">MyPCStore</a>
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Pages/index.html">Home</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>

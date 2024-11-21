@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -26,9 +26,9 @@
             </ul>
             <div class="auth-buttons">
                 <button class="your-cart-btn">
-                    <img src="your-cart.png" alt="Your Cart"> Your Cart</button>                
-                <a href="#" class="btn">Register</a>
-                <a href="#" class="btn">Login</a>
+                    <img src="../Images/Cart.png" alt="Your Cart"> Your Cart</button>                
+                <a href="register.html" class="btn">Register</a>
+                <a href="login.html" class="btn">Login</a>
             </div>
         </nav>
     </header>
@@ -36,13 +36,14 @@
     <main>
         <section class="product-details">
             <div class="product-image">
-                <img id="product-img" src="" alt="Product Image">
+                <img id="product-img" src="" alt="Product Image" width="200" height="200">
             </div>
             <div class="product-info">
                 <h1 id="product-name">Product Name</h1>
+                <p id="product-rating">No ratings yet</p>
                 <p id="product-price">₹0</p>
                 <p id="product-description">Product Description</p>
-                <button class="btn" id="add-to-cart-btn">Add to Cart</button>
+                <button href="#" class="btn" id="add-to-cart-btn">Add to Cart</button>
             </div>
         </section>
     </main>
@@ -72,15 +73,14 @@
             <div class="footer-category">
                 <h4>ACCOUNT</h4>
                 <ul>
-                    <li><a href="#">Sign up today!</a></li>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Delete account</a></li>
+                    <li><a href="register.html">Sign up!</a></li>
+                    <li><a href="login.html">Log in</a></li>
                 </ul>
             </div>
         </div>
         <p>&copy; 2024 MyPCStore. All rights reserved.</p>
     </footer>
 
-    <script src="product-details.js"></script>
+    <script src="../JavaScript/product-details.js"></script>
 </body>
 </html>
