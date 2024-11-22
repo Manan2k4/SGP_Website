@@ -1,6 +1,7 @@
 <?php
 session_start();
-session_unset();
-session_destroy();
-header("Location: register.html");
+session_unset(); // Remove all session variables
+session_destroy(); // Destroy the session
+header("Location: index.php"); // Redirect to homepage
+exit();
 ?>

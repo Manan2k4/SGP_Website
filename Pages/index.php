@@ -1,3 +1,25 @@
+<?php
+session_start();
+if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
+    // User is logged in, proceed with your code
+    $username =  $_SESSION['fname'];
+    echo "<script>
+    
+      document.addEventListener('DOMContentLoaded', function() {
+          const userDetails = document.getElementsByClassName('userinfo')[0];
+          const photoholder = document.getElementsByClassName('photoholder')[0];
+       
+          var USERname = '" . $username. "';
+          if (userDetails) {
+              userDetails.style.display = 'none';
+              photoholder.style.display = 'inline';
+              
+          }
+});
+      </script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +48,12 @@
             </ul>
             <div class="auth-buttons">
                 <button class="your-cart-btn">
-                    <img src="../Images/Cart.png" alt="Your Cart"> Your Cart</button>                
-                <a href="register.html" class="btn">Register</a>
-                <a href="login.html" class="btn">Login</a>
+                    <img src="../Images/Cart.png" alt="Your Cart"> Your Cart</button>  
+                    <div class="userinfo">
+                        <a href="connect/index.php" class="btn">Register</a>
+                        <a href="connect/login.php" class="btn">Login</a>
+                    </div>
+                    <div class="photoholder"><img src="prof.jpg" id="prof2"></div>
             </div>
         </nav>
     </header>

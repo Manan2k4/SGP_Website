@@ -1,14 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "my_pc_store";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// Database configuration
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'mypcstore');  // Replace 'mypcstore' with your database name
+define('DB_USER', 'root');       // Replace with your database username if different
+define('DB_PASS', '');           // Replace with your database password if set
 ?>

@@ -151,6 +151,23 @@ footer {
     margin-top: auto;
 }
 
+.photoholder {
+ 
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: none;
+        margin-left: 5px;
+}
+
+#prof2 {
+    height: 60px;
+    transform: translate(-10px,-10px);
+    width: auto;
+}
+
+
 .footer-container {
     display: flex;
     justify-content: space-evenly;
