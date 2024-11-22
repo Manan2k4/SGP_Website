@@ -25,7 +25,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="product-name-title"></titleid>>Product Details</title>
+    <title id="product-name-title"></titleid>>Company Details</title>
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 
@@ -44,7 +44,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 <li><a href="index.php#mobo">Motherboards</a></li>
                 <li><a href="index.php#storage">Storage</a></li>
                 <li><a href="index.php#monitors">Monitors</a></li>
-                <li><a href="index.php#peripherals">Peripherals</a></li>
+                <li><a href="index.php#peri">Peripherals</a></li>
             </ul>
             <div class="auth-buttons">
                 <button class="your-cart-btn">
@@ -61,14 +61,10 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
     <main>
         <section class="product-details">
             <div class="product-image">
-                <img id="product-img" src="" alt="Product Image" width="200" height="200">
             </div>
             <div class="product-info">
-                <h1 id="product-name">Product Name</h1>
-                <p id="product-rating">No ratings yet</p>
-                <p id="product-price">₹0</p>
-                <p id="product-description">Product Description</p>
-                <button href="#" class="btn" id="add-to-cart-btn">Add to Cart</button>
+                <h1 id="data-name">Detail Name</h1>
+                <p id="data-description">Detail Description</p>
             </div>
         </section>
     </main>
@@ -78,13 +74,13 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             <div class="footer-category">
                 <h4>PRODUCTS</h4>
                 <ul>
-                <li><a href="index.php#cpu">CPU</a></li>
-                <li><a href="index.php#gpu">GPU</a></li>
-                <li><a href="index.php#memory">Memory</a></li>
-                <li><a href="index.php#mobo">Motherboards</a></li>
-                <li><a href="index.php#storage">Storage</a></li>
-                <li><a href="index.php#monitors">Monitors</a></li>
-                <li><a href="index.php#peripherals">Peripherals</a></li>
+                    <li><a href="#cpu">CPU</a></li>
+                    <li><a href="#gpu">GPU</a></li>
+                    <li><a href="#memory">Memory</a></li>
+                    <li><a href="#mobo">Motherboards</a></li>
+                    <li><a href="#storage">Storage</a></li>
+                    <li><a href="#monitors">Monitors</a></li>
+                    <li><a href="#peri">Peripherals</a></li>
                 </ul>
             </div>
             <div class="footer-category">
@@ -106,6 +102,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
         <p>&copy; 2024 MyPCStore. All rights reserved.</p>
     </footer>
 
-    <script src="../JavaScript/products.js"></script>
+    <script src="../JavaScript/company.js"></script>
 </body>
 </html>

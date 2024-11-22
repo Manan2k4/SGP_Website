@@ -143,9 +143,9 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             <div class="footer-category">
                 <h4>COMPANY</h4>
                 <ul>
-                    <li><a href="company.html?product=tos">TOS</a></li>
-                    <li><a href="company.html?product=privacy-policy">Privacy Policy</a></li>
-                    <li><a href="company.html?product=your-data">Your Data</a></li>
+                    <li><a href="company.php?product=tos">TOS</a></li>
+                    <li><a href="company.php?product=privacy-policy">Privacy Policy</a></li>
+                    <li><a href="company.php?product=your-data">Your Data</a></li>
                 </ul>
             </div>
             <div class="footer-category">
