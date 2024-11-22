@@ -1,12 +1,12 @@
 <?php 
   session_start();
   if(isset($_SESSION['unique_id'])){
-    header("location: users.php");
+    header("location: ..\index.php");
   }
 ?>
 <style>
   body{
-    background-color: black;
+    background-color: white;
   }
 </style>
 <?php include_once "header.php"; ?>

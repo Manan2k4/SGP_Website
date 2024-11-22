@@ -1,3 +1,25 @@
+<?php
+session_start();
+if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
+    // User is logged in, proceed with your code
+    $username =  $_SESSION['fname'];
+    echo "<script>
+    
+      document.addEventListener('DOMContentLoaded', function() {
+          const userDetails = document.getElementsByClassName('userinfo')[0];
+          const photoholder = document.getElementsByClassName('photoholder')[0];
+       
+          var USERname = '" . $username. "';
+          if (userDetails) {
+              userDetails.style.display = 'none';
+              photoholder.style.display = 'inline';
+              
+          }
+});
+      </script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,22 +35,25 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">MyPCStore</a>
+                <a href="index.php">MyPCStore</a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#cpu">CPU</a></li>
-                <li><a href="index.html#gpu">GPU</a></li>
-                <li><a href="index.html#memory">Memory</a></li>
-                <li><a href="index.html#motherboards">Motherboards</a></li>
-                <li><a href="index.html#storage">Storage</a></li>
-                <li><a href="index.html#monitors">Monitors</a></li>
-                <li><a href="index.html#peripherals">Peripherals</a></li>
+                <li><a href="index.php#cpu">CPU</a></li>
+                <li><a href="index.php#gpu">GPU</a></li>
+                <li><a href="index.php#memory">Memory</a></li>
+                <li><a href="index.php#mobo">Motherboards</a></li>
+                <li><a href="index.php#storage">Storage</a></li>
+                <li><a href="index.php#monitors">Monitors</a></li>
+                <li><a href="index.php#peripherals">Peripherals</a></li>
             </ul>
             <div class="auth-buttons">
                 <button class="your-cart-btn">
-                    <img src="../Images/Cart.png" alt="Your Cart"> Your Cart</button>                
-                <a href="register.html" class="btn">Register</a>
-                <a href="login.html" class="btn">Login</a>
+                    <img src="../Images/Cart.png" alt="Your Cart"> Your Cart</button>  
+                    <div class="userinfo">
+                        <a href="connect/index.php" class="btn">Register</a>
+                        <a href="connect/login.php" class="btn">Login</a>
+                    </div>
+                    <div class="photoholder"><img src="prof.jpg" id="prof2"></div>
             </div>
         </nav>
     </header>
@@ -53,13 +78,13 @@
             <div class="footer-category">
                 <h4>PRODUCTS</h4>
                 <ul>
-                    <li><a href="#">CPU</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Memory</a></li>
-                    <li><a href="#">Motherboards</a></li>
-                    <li><a href="#">Storage</a></li>
-                    <li><a href="#">Monitors</a></li>
-                    <li><a href="#">Peripherals</a></li>
+                <li><a href="index.php#cpu">CPU</a></li>
+                <li><a href="index.php#gpu">GPU</a></li>
+                <li><a href="index.php#memory">Memory</a></li>
+                <li><a href="index.php#mobo">Motherboards</a></li>
+                <li><a href="index.php#storage">Storage</a></li>
+                <li><a href="index.php#monitors">Monitors</a></li>
+                <li><a href="index.php#peripherals">Peripherals</a></li>
                 </ul>
             </div>
             <div class="footer-category">

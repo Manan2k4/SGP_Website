@@ -38,13 +38,13 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 <a href="#">MyPCStore</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">CPU</a></li>
-                <li><a href="#">GPU</a></li>
-                <li><a href="#">Memory</a></li>
-                <li><a href="#">Motherboards</a></li>
-                <li><a href="#">Storage</a></li>
-                <li><a href="#">Monitors</a></li>
-                <li><a href="#">Peripherals</a></li>
+                    <li><a href="#cpu">CPU</a></li>
+                    <li><a href="#gpu">GPU</a></li>
+                    <li><a href="#memory">Memory</a></li>
+                    <li><a href="#mobo">Motherboards</a></li>
+                    <li><a href="#storage">Storage</a></li>
+                    <li><a href="#monitors">Monitors</a></li>
+                    <li><a href="#peri">Peripherals</a></li>
             </ul>
             <div class="auth-buttons">
                 <button class="your-cart-btn">
@@ -79,7 +79,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <h3>NVIDIA GTX 1660 4GB</h3>
                     <p>★★★☆☆</p>
                     <p>₹20,549</p>
-                    <a href="product.html?product=gtx-1660" class="btn">View Details</a>
+                    <a href="product.php?product=gtx-1660" class="btn">View Details</a>
                     <a href="#" class="btn">Add to cart</a>
                 </div>
                 <div class="product-card">
@@ -87,7 +87,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <h3>Intel i5 11th Gen</h3>
                     <p>★★★☆☆</p>
                     <p>₹16,200</p>
-                    <a href="product.html?product=intel-i5" class="btn">View Details</a>
+                    <a href="product.php?product=intel-i5" class="btn">View Details</a>
                     <a href="#" class="btn">Add to cart</a>
                 </div>
                 <div class="product-card">
@@ -95,7 +95,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <h3>NVIDIA RTX 3050 Ti 4GB</h3>
                     <p>★★★★☆</p>
                     <p>₹48,000</p>
-                    <a href="product.html?product=rtx-3050-ti" class="btn">View Details</a>
+                    <a href="product.php?product=rtx-3050-ti" class="btn">View Details</a>
                     <a href="#" class="btn">Add to cart</a>
                 </div>
                 <div class="product-card">
@@ -103,7 +103,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <h3>Corsair 32GB (8x4) 3200MHz Ram</h3>
                     <p>★★★★☆</p>
                     <p>₹14,500</p>
-                    <a href="product.html?product=corsair-32gb" class="btn">View Details</a>
+                    <a href="product.php?product=corsair-32gb" class="btn">View Details</a>
                     <a href="#" class="btn">Add to cart</a>
                 </div>
                 <div class="product-card">
@@ -111,7 +111,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <h3>Asus Z790-A Motherboard</h3>
                     <p>★★★☆☆</p>
                     <p>₹9600</p>
-                    <a href="product.html?product=atx-motherboard" class="btn">View Details</a>
+                    <a href="product.php?product=atx-motherboard" class="btn">View Details</a>
                     <a href="#" class="btn">Add to cart</a>
                 </div>
                 <div class="product-card">
@@ -119,7 +119,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <h3>AMD Ryzen 7 9800X3D</h3>
                     <p>★★★☆☆</p>
                     <p>₹70,650</p>
-                    <a href="product.html?product=rx-7900-gre" class="btn">View Details</a>
+                    <a href="product.php?product=rx-7900-gre" class="btn">View Details</a>
                     <a href="#" class="btn">Add to cart</a>
                 </div>
             </div>
@@ -131,13 +131,13 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             <div class="footer-category">
                 <h4>PRODUCTS</h4>
                 <ul>
-                    <li><a href="#">CPU</a></li>
-                    <li><a href="#">GPU</a></li>
-                    <li><a href="#">Memory</a></li>
-                    <li><a href="#">Motherboards</a></li>
-                    <li><a href="#">Storage</a></li>
-                    <li><a href="#">Monitors</a></li>
-                    <li><a href="#">Peripherals</a></li>
+                    <li><a href="#cpu">CPU</a></li>
+                    <li><a href="#gpu">GPU</a></li>
+                    <li><a href="#memory">Memory</a></li>
+                    <li><a href="#mobo">Motherboards</a></li>
+                    <li><a href="#storage">Storage</a></li>
+                    <li><a href="#monitors">Monitors</a></li>
+                    <li><a href="#peri">Peripherals</a></li>
                 </ul>
             </div>
             <div class="footer-category">
